@@ -1,0 +1,73 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(../fonts/Comfortaa-Regular.ttf);
+}
+
+body {
+    font-family: comfortaa;
+    margin: 0;
+}
+
+#popup {
+    position: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    border: 1px black solid;
+    background-color: lightblue;
+    opacity: 0;
+}
+
+#popup-background {
+    background-color: rgba(54, 81, 94, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#close-popup {
+    border: 1px #eeeeee solid;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+h1 {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main {
+    border: 1px #eeeeee solid;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#bike-container {
+    padding: 10px;
+}
+
+@media screen and (max-width: 550px){
+    #bike-image {
+        width: 300px;
+        height: auto;
+    }
+}
